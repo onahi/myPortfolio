@@ -52,8 +52,13 @@ ul li a{
     font-size: 1.5em;
     font-family: Helvetica;
 }
-ul li a :hover{
-    border-bottom: 1px solid teal;
+ul li a:hover {
+    color: teal;
+    border-bottom: 4px solid teal;
+}
+ul li a:active {
+    color: teal;
+    border-bottom: 4px solid teal;
 }
 label[for="toggle"]{
     font-size: 30px;
@@ -85,11 +90,13 @@ label[for="toggle"]{
     width: 30%;
     background-color:white;
     height: 150px;
+    text-align: center;
+    padding-top: 2%;
 }
 i[class~=huge]{
     margin-left: auto;
     margin-right: auto;
-    color: yellow;
+    color: teal;
 }
 #service-quality{
     padding: 5% 10% 5% 10%;
@@ -116,6 +123,9 @@ i[class~=huge]{
     width:50%;
     height: auto;
     background-color: white;
+}
+#about2 p{
+    font-size: 1.2em;
 }
 #contact{
     width: 100%;
@@ -187,8 +197,22 @@ footer{
     }
     footer{
         flex-direction: column;
+        padding-bottom: 1%;
     }
     #social-media{
         margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    header{
+        height: 70px;
+        padding-top: 2%;
+    }
+    #logo{
+        width: 40%;
+    }
+    nav{
+        width: 40%;
     }
 }
